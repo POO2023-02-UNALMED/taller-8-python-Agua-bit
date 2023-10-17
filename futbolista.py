@@ -28,3 +28,13 @@ class Futbolista(Persona, Deportista):
     
     def setPiernaHabil(self, piernaHabil):
         self._piernaHabil = piernaHabil
+
+    @classmethod
+    def getListaFutbolistas(cls):
+        return cls.listaFutbolistas
+    
+    @classmethod
+    def setListaFutbolistas(cls, listaFutbolistas):
+        cls.listaFutbolistas = listaFutbolistas
+
+    
